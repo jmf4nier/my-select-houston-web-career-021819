@@ -14,7 +14,7 @@ selected
 end
 my_select(collection) do |num|
   new_collection = collection
-  if num.to_i.even?
+  if num.to_i.odd?
     num
   end
   
