@@ -4,7 +4,7 @@ def my_select(collection)
  i = 0 
  selected = []
  while i < collection.length 
-    if yield(collection[i]) != nil
+    if yield(collection[i]) == true
       selected << yield(collection[i]) 
     end
     
@@ -13,10 +13,5 @@ def my_select(collection)
 selected   
 end
 my_select(collection) do |num|
-  
-  if num.to_i.odd?
-    num
-  end
-  
-  
+   num.to_i.odd?
 end
