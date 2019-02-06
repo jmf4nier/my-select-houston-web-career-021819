@@ -13,5 +13,5 @@ def my_select(collection)
 selected   
 end
 my_select(collection) do |num|
-   num.to_i.odd?
+   num.to_i.even?
 end
